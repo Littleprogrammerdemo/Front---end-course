@@ -1,0 +1,230 @@
+/* General Styles */
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #a8dbf2, #b2e6d4);
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: linear-gradient(90deg, #4290d8 7%, #46c0b9 48%, #4bf390 96%);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    font-family: "Dancing Script", cursive;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sign-in, .join {
+    background-color: rgba(10, 45, 202, 0.6);
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* Welcome Section */
+.welcome-section {
+    padding: 120px 20px 60px;
+    text-align: center;
+    background: #d6f5f2;
+    border-radius: 0 0 50px 50px;
+}
+
+.welcome-section h1 {
+    font-size: 60px;
+    color: #086470;
+    font-family: "Dancing Script", cursive;
+}
+
+.welcome-section p {
+    font-size: 20px;
+    color: #086470;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.catalog-btn {
+    font-size: 18px;
+    font-weight: bold;
+    color: #086470;
+    border: 2px solid #086470;
+    border-radius: 30px;
+    padding: 12px 25px;
+    background: none;
+    cursor: pointer;
+}
+
+.welcome-section img {
+    width: 250px;
+    margin-top: 20px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 25px;
+    border-radius: 50px;
+    text-align: center;
+    width: 20%;
+    border: 2px solid black;
+}
+
+.service-box p {
+    font-size: 16px;
+    color: rgb(99, 96, 96);
+    text-align: justify;
+}
+
+.violet {
+    border: 2px solid rgba(131, 5, 190, 0.178);
+    background: rgba(131, 5, 190, 0.178);
+}
+
+.blue {
+    border: 2px solid rgba(4, 36, 216, 0.178);
+    background: rgba(4, 36, 216, 0.178);
+}
+
+.light-blue {
+    border: 2px solid rgba(4, 138, 216, 0.178);
+    background: rgba(4, 138, 216, 0.178);
+}
+
+.green {
+    border: 2px solid rgba(4, 216, 117, 0.178);
+    background: rgba(4, 216, 117, 0.178);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: rgba(66, 144, 216, 0.9);
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .nav-links li {
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    
+    #menu-toggle:checked + .nav-links {
+        display: flex;
+    }
+    
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .service-box {
+        width: 80%;
+    }
+}
+
+
+  
+    /* Gallery */
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        background: rgba(96, 175, 171, 0.493);
+        padding: 30px 0;
+      }
+      
+      .gallery img {
+        width: 31%;
+        height: 31%;
+        background: rgba(255, 255, 255, 0.308);
+        border-radius: 20px;
+      }
+  
+    /* Footer */
+    footer {
+        width: 100%;
+        padding: 50px 0;
+        background: rgb(66, 144, 216);
+        background: linear-gradient(
+          90deg,
+          rgba(66, 144, 216, 0.7847514005602241) 7%,
+          rgba(70, 192, 185, 1) 48%,
+          rgba(75, 243, 144, 0.5326505602240896) 96%
+        );
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      footer > p {
+          text-decoration: none;
+          color: white;
+      }
+      
+      footer > p > a {
+          text-decoration: none;
+          color: white;
+          font-family: Playwrite IN, serif;
+      }
+     
